@@ -172,9 +172,9 @@ sleepy-seeds/
 
 ## 🌟 Future Enhancements
 
-- 👤 **Child profiling** — personalize stories based on favorite characters and themes
+- 👤 **Personalized story profiles** — remember each child's favorite characters and themes
 - 🎨 **DALL·E integration** — generate 2–3 illustrations per story
-- 👨‍👩‍👧 **Parental dashboard** — monitor usage and story preferences
+- 👨‍👩‍👧 **Parents dashboard** — monitor usage and story preferences
 
 ---
 
