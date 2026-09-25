@@ -24,6 +24,11 @@ header[data-testid="stHeader"] {
     min-height: 100vh !important;
 }
 
+h3, h4,
+[data-testid="stWidgetLabel"] {
+    color: #5f4a8a !important;
+}
+
 /* White card */
 .block-container {
     background: white !important;
