@@ -1,7 +1,7 @@
 openai
-sounddevice
+
 scipy
-playsound
+
 python-dotenv
 streamlit
 soundfile
