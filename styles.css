@@ -5,42 +5,56 @@ header[data-testid="stHeader"] {
 
 /* Background */
 .stApp {
-    background: linear-gradient(135deg, rgba(209, 196, 233, 0.4) 0%, rgba(241, 224, 238, 0.4) 100%),
-                url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80');
+    background:
+        linear-gradient(
+            135deg,
+            rgba(209, 196, 233, 0.4) 0%,
+            rgba(241, 224, 238, 0.4) 100%
+        ),
+        url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80');
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    color: #a27de3 !important;
-    --text-color: #a27de3 !important;
+
+    /* Default text color */
+    color: #4a4a4a !important;
+    --text-color: #4a4a4a !important;
 }
 
-/* top  margin */
+/* Top margin */
 [data-testid="stAppViewContainer"] {
     padding-top: 8vh !important;
     padding-bottom: 8vh !important;
-    overflow-y:auto !important ;
+    overflow-y: auto !important;
 }
 
 .stApp [data-testid="stAppViewContainer"] > .main {
     min-height: 100vh !important;
 }
 
-h3, h4,
+/* Section headings and widget labels */
+h3,
+h4,
 [data-testid="stWidgetLabel"] {
     color: #5f4a8a !important;
 }
 
-/* White card */
+/* Main white card */
 .block-container {
     background: white !important;
     border-radius: 24px !important;
     padding: 3rem 2rem 5rem 2rem !important;
     max-width: 800px !important;
     min-height: auto !important;
-    
     margin: 0 auto !important;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+
+    border: 1px solid rgba(157, 120, 201, 0.16) !important;
+
+    box-shadow:
+        0 14px 40px rgba(70, 52, 95, 0.18),
+        0 0 0 6px rgba(181, 147, 217, 0.05) !important;
 }
 
 /* Typography */
@@ -51,12 +65,25 @@ h1 {
     font-weight: 700 !important;
 }
 
+h1,
+h3,
+h4 {
+    letter-spacing: 0.3px;
+}
+
+/* Main question */
 .question-text {
-    color: #956acc !important;
+    color: #7c5aa6 !important;
     font-size: 1.4rem !important;
     font-weight: 600 !important;
     text-align: center !important;
-    margin: 2rem 0 1.5rem 0 !important;
+
+    background: #f7f2fb;
+    padding: 0.8rem 1.2rem;
+    border-radius: 18px;
+
+    width: fit-content;
+    margin: 2rem auto 1.5rem auto !important;
 }
 
 /* Radio pills */
@@ -66,10 +93,21 @@ h1 {
 }
 
 .stRadio label {
-    background: #f0ebf8 !important;
+    background: #ede6f7 !important;
     padding: 0.7rem 1.5rem !important;
     border-radius: 20px !important;
-    color: #6f5ba5 !important;
+
+    color: #5f4a8a !important;
+
+    transition: all 0.18s ease !important;
+
+    box-shadow:
+        0 3px 8px rgba(95, 74, 138, 0.08);
+}
+
+.stRadio label:hover {
+    transform: translateY(-2px);
+    background: #e4d8f3 !important;
 }
 
 .stRadio input[type="radio"] {
@@ -78,23 +116,66 @@ h1 {
 
 /* Generate button */
 .stButton button {
-    background: linear-gradient(135deg, #b593d9 0%, #9d7cc5 100%) !important;
+    background:
+        linear-gradient(
+            135deg,
+            #9d78c9 0%,
+            #7f5aae 100%
+        ) !important;
+
     color: white !important;
+
     border-radius: 16px !important;
     height: 60px !important;
+
+    font-weight: 600 !important;
+
+    transition: all 0.2s ease !important;
+
+    box-shadow:
+        0 6px 16px rgba(127, 90, 174, 0.20) !important;
 }
 
-/* Action buttons */
-.stDownloadButton button{
-    background: linear-gradient(135deg, #b593d9 0%, #9d7cc5 100%) !important;
+.stButton button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 22px rgba(127, 90, 174, 0.28) !important;
+}
+
+/* Download / action buttons */
+.stDownloadButton button {
+    background:
+        linear-gradient(
+            135deg,
+            #9d78c9 0%,
+            #7f5aae 100%
+        ) !important;
+
     color: white !important;
+
     border-radius: 16px !important;
     height: 60px !important;
+
+    font-weight: 600 !important;
+
+    transition: all 0.2s ease !important;
+
+    box-shadow:
+        0 6px 16px rgba(127, 90, 174, 0.20) !important;
+}
+
+.stDownloadButton button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 22px rgba(127, 90, 174, 0.28) !important;
 }
 
 /* Story box */
 .story-container {
     background: #f8f9fa;
+    color: #4a4a4a !important;
     padding: 1.5rem;
     border-radius: 12px;
 }
