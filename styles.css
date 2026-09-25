@@ -11,6 +11,8 @@ header[data-testid="stHeader"] {
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+    color: #a27de3 !important;
+    --text-color: #a27de3 !important;
 }
 
 /* top  margin */
